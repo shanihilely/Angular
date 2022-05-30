@@ -1,0 +1,23 @@
+/* MessagesComponent's private CSS styles */
+h4 {
+ 
+  color: black;
+  font-family: Florence, cursive;
+  font-weight: lighter;
+  font-size: large;
+  
+}
+
+.clear {
+  color: #333;
+  background-color: rgb(251, 223, 241);
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Florence, cursive;
+}
+.clear:hover {
+  color: white;
+  background-color: #42545C;
+}

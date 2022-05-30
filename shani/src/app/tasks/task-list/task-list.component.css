@@ -1,0 +1,159 @@
+
+.tasks {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 18em; 
+}
+
+.tasks li {
+  display:inline-flexbox;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+.tasks button {
+  
+  /* flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(209, 202, 253);
+  margin: .5em;
+  padding: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: stretch;
+  height: 1.8em; */
+
+  flex: 1;
+  cursor: pointer;
+  position:relative;
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  color: white;
+  background-color: rgb(196, 115, 184);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.tasks button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+
+.tasks button:active {
+  background-color: #525252;
+  color: #fafafa;
+  transform: translateY(4px);
+ 
+}
+
+.tasks button.selected {
+  background-color: grey;
+  color: white;
+}
+
+.tasks button.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.tasks button.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.tasks .num {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.tasks .name {
+  align-self: center; 
+}
+.tasks .done {
+  background-color: green;
+}
+
+.tasks button.task-status {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tasks button.task-status:focus{
+  background-color: green;
+}
+
+.tasks button.task-status:active{
+  background-color: green;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: rgb(247, 172, 215);
+}
+
+
+.add-button {
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+ }
+ 
+ .add-button:hover {
+   color: white;
+   background-color: #42545C;
+ }
+ 
+button.delete {
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  background-color: white;
+  color:  #525252;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+}
+ 
+ button.delete:hover {
+   background-color: #525252;
+   color: white;
+ }
+

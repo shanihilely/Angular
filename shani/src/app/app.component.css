@@ -1,0 +1,23 @@
+.main{
+    color: white;
+    align-content: center;
+    background-color: pink;
+    text-align:center;
+    font-size: 200%;
+    text-transform: uppercase;
+    
+}
+.links, .links a {
+    color: rgb(160, 36, 154);
+    display: inline-block;
+    padding: 10px;
+    }
+    .links a.active {
+    background-color: rgb(174, 168, 168);
+    }
+    .links a:hover{
+        color: white;
+  background-color: #42545C;
+    }
+    
+    

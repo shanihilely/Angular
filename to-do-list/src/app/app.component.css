@@ -1,0 +1,56 @@
+/* AppComponent's private CSS styles */
+.main{
+   color: white;
+  align-content: center;
+  background-color: rgb(218, 147, 215);
+  text-align:center;
+  font-size: 200%;
+  text-transform: uppercase; 
+  width:max-content;
+
+}
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	background: url('https://www.desktopbackground.org/p/2013/10/11/652385_cute-star-wallpapers-wallpapers-zone_640x960_h.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #c15cb769 10%, #f325d86b 100%);
+	
+}
+
+
+
+.links, .links a {
+  color: rgb(160, 36, 154);
+  display: inline-block;
+  padding: 10px;
+  }
+  .links a.active {
+  background-color: rgb(174, 168, 168);
+  }
+  .links a:hover{
+      color: white;
+background-color: #42545C;
+  }
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  

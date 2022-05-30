@@ -1,0 +1,17 @@
+<div *ngIf="task">
+  <h2>{{task.name | uppercase}}</h2>
+
+  
+  <h3>Details</h3>
+  <div><span>num: </span>{{task.num}}</div>
+  <div>
+  Start Date: {{task.startDate}}</div>
+  <div>Description: 
+    {{task.description}}
+   <label for="Description"> </label>
+ </div>
+
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+
+</div>

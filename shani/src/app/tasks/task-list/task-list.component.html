@@ -1,0 +1,45 @@
+ <h2>My Tasks</h2>
+
+  <ul class="tasks">
+        <div>
+          <label for="new-task">Task name:
+          </label>
+            <form class="flex mt-4">
+              <input num="new-task" #TaskName placeholder="Add New Task"/>
+              
+              <button type="button" class="add-button" 
+              (click)="add(TaskName.value); TaskName.value=''"
+              style="background-color: white; color:black"
+              >
+              Add
+            </button>
+          </form>
+          </div>
+
+    <li *ngFor="let t of tasks">
+      <button [class.selected]="t === selectedTask"
+      type="button" (click)="onSelect(t)">
+      <a routerLink="/detail/{{t.num}}">
+      </a>
+      <span class="name">{{t.name}}</span> 
+    </button> 
+
+    
+
+    
+      <div class="delete">
+       <button type="button" class="delete" title="delete task"
+       (click)="delete(task)" style="position: absolute;
+       left: 210px;
+       top: 5px;
+       background-color: white;
+       color:  #525252;
+       font-size: 1.1rem;
+       margin: 0;
+       padding: 1px 10px 3px 10px;"  >X</button>
+    </div>
+  </li>
+  </ul> 
+ 
+  <app-task-details [task]="selectedTask"></app-task-details>
+  
