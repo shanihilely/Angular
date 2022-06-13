@@ -19,6 +19,7 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { UserService } from './user.service';
 import { AuthGuard } from './guards/auth.guard';
+import { TaskViewComponent } from './task-view/task-view.component';
 
 
 
@@ -43,6 +44,7 @@ import { AuthGuard } from './guards/auth.guard';
     TaskDetailComponent,
     LoginComponent,
     RegisterComponent,
+    TaskViewComponent,
     
   ],
   providers: [

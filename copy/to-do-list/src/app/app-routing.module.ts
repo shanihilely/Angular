@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 import { StockLoadResolverService } from './guards/stock-load-resolver.guard';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { TaskViewComponent } from './task-view/task-view.component';
 import { TasksComponent } from './tasks/tasks.component';
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: TaskDetailComponent },
   { path: '**', redirectTo: 'tasks/list' },
+  {path:'task-view', component:TaskViewComponent}
   // { path: 'tasks/create', component: CreateTaskComponent },
   // { path: 'login', component: LoginComponent },
   // { path: 'register', component: RegisterComponent },

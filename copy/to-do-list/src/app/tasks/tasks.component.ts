@@ -13,10 +13,10 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
-    this.getHeroes();
+    this.getTasks();
   }
 
-  getHeroes(): void {
+  getTasks(): void {
     this.taskService.getTasks()
     .subscribe(tasks => this.tasks = tasks);
   }
@@ -34,9 +34,4 @@ export class TasksComponent implements OnInit {
     this.tasks = this.tasks.filter(t => t !== task);
     this.taskService.deleteTask(task.id).subscribe();
   }
-
-
-  
-
-
 }

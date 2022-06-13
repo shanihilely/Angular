@@ -1,0 +1,41 @@
+<div class="centered-content">
+    <div class="task-manager-container">
+        <div class="sidebar has-background-white">
+            <h1 class="title has-text-primary">
+                Lists Of Tasks
+            </h1>
+
+            <div class="list-menu">
+                <a class="list-menu-item">
+                    <ul>
+                        <a>
+                            <li *ngFor="let task of tasks"
+                            routerLink="/detail/{{task.id}}">
+                            {{task.name}}
+                            </li>
+                        </a>
+                </ul>
+                </a>
+            </div>
+
+            <button class="button is-primary has-text-white">+New Task</button>
+
+        </div>
+
+        <div class="tasks-list-container has-background-light">
+            <h1 class="title has-text-primary">
+                Tasks
+            </h1>
+
+            <!-- task element -->
+            <div class="task">
+                <p>New to do task</p>
+            </div>
+            <div class="task complete">
+                <p>New to do task</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -126,6 +126,13 @@ img {
   width: 150px;
   }
 
+  .mark-as-done button:active{
+    text-decoration: line-through;
+    
+  }
+
+
+
 
 
 

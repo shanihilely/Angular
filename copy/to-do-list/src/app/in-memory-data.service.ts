@@ -19,7 +19,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 12,
-        name: "BROWSER BASICS",
+        name: "Browser Basics",
         startDate: new Date().toDateString(),
         description: "HTML,CSS",
         isDone: false,
